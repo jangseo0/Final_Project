@@ -1,0 +1,411 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Monument";
+  src: url("https://res.cloudinary.com/holatresveces/raw/upload/v1573001944/MonumentExtended-Ultrabold_clzvv7.otf");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: fit-content;
+  position: fixed; /* 13.3.3 absolute -> fixed */
+  color: rgb(255, 255, 255); /* 13.3.3 black -> white */
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding: 30px;
+  background-color: black;
+}
+
+header .inner {
+  width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  padding: 10px;
+  font-family: "SF Pro Display", "Noto Sans KR", sans-serif;
+}
+
+header button {
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  padding: 0px 10px;
+}
+
+button[data-animation-scroll="true"]:hover {
+  background-color: black;
+  color: #f26c53;
+}
+header nav ul li button {
+  font-size: 1rem;
+}
+
+header .inner .util {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+}
+
+header .inner .util li {
+  float: left;
+}
+
+figure {
+  width: 100%;
+  height: auto;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+  padding-top: 50px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  background-size: cover;
+}
+
+
+.aboutme {
+  position: relative;
+  margin: 0 auto 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 2 0 0 auto;
+  height: auto;
+  background-color: #f26c53;
+}
+
+
+.aboutme .aboutme_title {
+  font-family: "Paytone One", sans-serif;
+  color: #fff;
+  padding: 45px 0 30px 0;
+  font-weight: 300;
+  font-size: 4rem;
+  text-align: center;
+  word-break: kiip-all;
+  border-bottom: 0.2rem solid #fff;
+}
+
+.aboutme .aboutme_containor {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  font-family: Noto Sans KR, sans-serif;
+}
+
+.aboutme .aboutme_containor .aboutme_box {
+  flex-shrink: 0;
+  width: 80%;
+  padding: 1.5rem;
+  margin: 35px;
+  border-radius: 0.8rem;
+  background-color: #fff;
+  margin-bottom: 0;
+  box-shadow: 1rem 1rem 1rem 0 rgb(255 255 255 / 0%);
+}
+
+.aboutme .aboutme_containor .aboutme_box .aboutme_box_title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  color: #56585c;
+}
+
+.aboutme .aboutme_containor .aboutme_box .aboutme_box_subtitle {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ccc;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #9ca0a8;
+}
+
+.aboutme .aboutme_containor .aboutme_box .aboutme_box_des {
+  display: flex;
+  flex-flow: column wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.aboutme .aboutme_containor .aboutme_box .aboutme_box_des_left {
+  width: 45%;
+}
+
+.aboutme .aboutme_containor .aboutme_box .aboutme_box_des_right {
+  width: 45%;
+  height: auto;
+}
+
+.aboutme
+  .aboutme_containor
+  .aboutme_box
+  .aboutme_box_des_right
+  .aboutmet_box_des_right_info {
+  border-top: 1px solid #9ca0a8;
+}
+
+.aboutme
+  .aboutme_containor
+  .aboutme_box
+  .aboutme_box_des_right
+  .aboutme_box_des_right_info
+  .info_key {
+  display: inline-block;
+  vertical-align: top;
+  width: 6.4rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.aboutme
+  .aboutme_containor
+  .aboutme_box
+  .aboutme_box_des_right
+  .aboutme_box_des_right_info
+  .info_value {
+  display: inline-block;
+  vertical-align: bottom;
+  width: calc(100% - 8.4rem);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.guestbook {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.guestbook h1 {
+  font-family: "Paytone One", sans-serif;
+  font-size: 4rem;
+}
+
+.guestbook .guestbook_container {
+  text-align: center;
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  background: whitesmoke;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+.guestbook .guestbook-inputsection {
+  margin-bottom: 20px;
+}
+
+.guestbook input, .guestbook-inputsection textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.guestbook .guestbook-inputsection button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.guestbook .guestbook-inputsection button:hover {
+  background-color: #0056b3;
+}
+
+.guestbook-monitor {
+  background: #333;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  height: 500px;
+  overflow-y: auto;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column; /* 아래에서 위로 정렬 */
+}
+
+.guestbook-screen {
+  background: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.guestbook .message {
+  background: #dcf8c6;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  max-width: 50%;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.guestbook .message::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-top:15px solid #dcf8c6;
+  border-left: 15px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid transparent;
+}
+
+
+.guestbook .message .delete-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.guestbook .message .delete-button:hover {
+  background: darkred;
+}
+
+.guestbook .message .author {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.guestbook .timestamp {
+  font-size: 0.8em;
+  color: #666;
+  margin-top: 5px;
+}
+
+.mysns {
+  width: 100%;
+  height: auto;
+  background: #fcffad;
+  position: relative;
+  overflow: hidden;
+  padding-top: 10px;
+}
+
+.mysns .inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.mysns .phone {
+  width: 300px;
+  height: 580px;
+  background-color: #000;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  position: relative;
+  margin-top: 20px;
+}
+
+.mysns .phone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 5px;
+  background-color: #333;
+  border-radius: 10px;
+}
+
+.mysns .phone-screen {
+  width: 260px;
+  height: 520px;
+  background-color: #fff;
+  border-radius: 20px;
+  margin: 30px auto;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mysns .mysns_container {
+  display: flex;
+  justify-content: center;
+  background-color: #fcffad;
+  gap: 20px;
+  padding-bottom: 60px;
+}
+
+.mysns .mysns_title {
+  font-family: "Paytone One", sans-serif;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.icon-link {
+  margin: 10px;
+  text-decoration: none;
+}
+
+.icon-link img {
+  width: 50px;  
+  height: 50px; 
+  transition: transform 0.3s;
+}
+
+.icon-link:hover img {
+  transform: scale(1.2); 
+}

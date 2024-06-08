@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer src="js/project.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Paytone+One&display=swap');
+    </style>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <nav>
+                <ul class="util">
+                    <li><button class="nav-button" data-target="#aboutme_section">About Me</button></li>
+                    <li><button class="nav-button" data-target="#guestbook_section">Guest Book</button></li>
+                    <li><button class="nav-button" data-target="#mysns_section">My SNS</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <figure>
+        <img src="img/main_text_2.jpg" alt="main text">
+    </figure>
+
+    <section class="aboutme" id="aboutme_section">
+        <div class="inner">
+            <div class="aboutme">
+                <div class="aboutme_title">About Me</div>
+                <div class="aboutme_containor">
+                    <div class="aboutme_box">
+                        <div class="aboutme_box_title">JANG SEOYOUNG</div>
+                        <div class="aboutme_box_subtitle"></div>
+                        <div class="aboutme_box_des">
+                            <div class="aboutme_box_des_left">
+                                <a href="https://youtu.be/nFYwcndNuOY?si=IqZi1bmjFtMItVzd">
+                                    <img src="img/icon.png" alt="" width="100%">
+                                </a>
+                            </div>
+                            <div class="aboutme_box_des_right">
+                                <p>광운대학교 동북아문화산업학부 23학번 장서영입니다.</p>
+                                <br />
+                                <div class="aboutme_box_des_right_info">
+                                    <br />
+                                    <div class="info_key">Name</div>
+                                    <div class="info_value"><a>장서영</a></div>
+                                    <br /><br />
+                                    <div class="info_key">Birth</div>
+                                    <div class="info_value"><a>2003.03.27</a></div>
+                                    <br /><br />
+                                    <div class="info_key">Hobby</div>
+                                    <div class="info_value"><a>드럼 연주</a></div>
+                                    <br /><br />
+                                    <div class="info_key">My Goal</div>
+                                    <div class="info_value">
+                                        <p>Front-End Developer</p>
+                                        <br />
+                                        <p>정보융합학부 VT전공으로 복수전공 예정입니다.</p>
+                                        <p>오픈소스소프트웨어 과목에서 오픈소스에 대한 개념을 이해하고 리눅스 활용 능력을 향상 중입니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="guestbook" id="guestbook_section">
+        <div class="guestbook_container">
+            <h1>Guest Book</h1>
+            <div class="guestbook-inputsection">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="content" name="content" placeholder="Text Your Message" required></textarea>
+                <button id="submit-button">Send</button>
+            </div>
+            <div class="guestbook-monitor">
+                <div class="guestbook-screen" id="guestbook-entries"></div>
+            </div>
+        </div>
+    </section>
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <section class="mysns" id="mysns_section">
+      <div class="inner">
+          <div class="mysns">
+              <div class="mysns_title">My SNS</div>
+              <div class="mysns_container">
+                  <div class="phone">
+                      <div class="phone-screen">
+                          <a href="https://github.com/jangseo0" target="_blank" class="icon-link">
+                            <img src="img/github_icon.png" alt="GitHub">
+                          </a>
+                          <a href="https://www.instagram.com/seoier0/" target="_blank" class="icon-link">
+                            <img src="img/Instagram_icon.png" alt="Instagram">
+                          </a>
+                          <a href="https://blog.naver.com/suhyoung030327" target="_blank" class="icon-link">
+                            <img src="img/blog_logo.png" alt="Blog">
+                          </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
+</html>
