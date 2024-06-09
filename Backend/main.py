@@ -42,7 +42,8 @@ def delete_entry(entry_id: str):
     guestbook_entries = [entry for entry in guestbook_entries if entry["id"] != entry_id]
     return {"message": "Entry deleted successfully"}
 
-app.mount("/", StaticFiles(directory="../frontend", html=True), name="static")
+frontend_directory = "/home/ubuntu/Final_Project/Frontend"
+app.mount("/", StaticFiles(directory=frontend_directory, html=True), name="static")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8085, reload=True)
